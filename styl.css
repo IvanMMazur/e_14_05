@@ -1,4 +1,4 @@
-*{
+* {
   background-color: #EEEEEE;
 }
 .kontener{
@@ -9,33 +9,63 @@
 .baner{
   background-color: #DDDDDD;
   height: 200px;
+  float: left;
 }
 .główny{
   margin: 50px;
+  float: left;
+  width: 1000px;
 }
 .stopka{
-  color: #c0c0c0;
+  background-color: #c0c0c0;
   height: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: right;
+  float: left;
+  width: 1000px;
 }
 .logo{
   float: left;
   width: 400px;
-}
-.menu{
-  float: right;
-  width: 600px;
-}
-.gorny {
-  color: #c0c0c0;
+  background-color: #c0c0c0;
   height: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-a {
+.menu{
+  float: right;
+  width: 600px;
+  background-color: #c0c0c0;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* .gorny {
+
+} */
+.menu a {
+  text-decoration: none;
   color: #555555;
   margin: 50px;
   font-size: 200%;
+  background-color: transparent;
+}
+.logo img {
+  background-color: transparent;
+}
+.stopka p {
+  background-color: transparent;
+}
+.stopka b {
+  background-color: transparent;
+}
+input {
+  background-color: white;
+}
+textarea {
+  background-color: white;
+}
+input[type="submit"] {
+  background-color: transparent;
 }
