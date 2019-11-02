@@ -1,0 +1,41 @@
+*{
+  background-color: #EEEEEE;
+}
+.kontener{
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+}
+.baner{
+  background-color: #DDDDDD;
+  height: 200px;
+}
+.główny{
+  margin: 50px;
+}
+.stopka{
+  color: #c0c0c0;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+.logo{
+  float: left;
+  width: 400px;
+}
+.menu{
+  float: right;
+  width: 600px;
+}
+.gorny {
+  color: #c0c0c0;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+a {
+  color: #555555;
+  margin: 50px;
+  font-size: 200%;
+}
