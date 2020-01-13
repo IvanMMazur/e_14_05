@@ -69,3 +69,7 @@ textarea {
 input[type="submit"] {
   background-color: transparent;
 }
+#js{
+  clear: left;
+  color: red;
+}

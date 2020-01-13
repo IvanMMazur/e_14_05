@@ -22,27 +22,46 @@
     <div class="główny">
         <hr width="70%">
           <h2>Kontakt</h2>
-          <form action="">
+          <form action="#">
             <table align="left">
-                <tr align="left"><td>Imie:</td><td><input type="text" name="firstname" value="Mickey"></td></tr>
-                <tr align="left"><td>Nazwisko:</td><td><input type="text" name="lastname" value="Mouse"></td></tr>
-                <tr align="left"><td>E-mail:</td><td><input type="email" name="email" value="gena@zyzni.net"></td></tr>
-                <tr align="left"><td>Usluga:</td><td><textarea name="mesage" rows="4" cols="25"> Текст по умолчанию </textarea><br></td></tr>
-                <tr align="left"><td></td><td><input type="checkbox">Zapoznalem/em sie z regulaminem</td></tr>
-                <tr align="left"><td></td><td><input id="" type="submit" value="Resetuj">
-                                 <input id="Przesli" type="submit" value="Przesli"></td></tr>
+                <tr align="left"><td>Imie:</td><td>
+                  <input type="text" id="firstnam"></td></tr>
+                <tr align="left"><td>Nazwisko:</td><td>
+                  <input type="text" id="lastname"></td></tr>
+                <tr align="left"><td>E-mail:</td><td>
+                  <input type="email" id="email"></td></tr>
+                <tr align="left"><td>Usluga:</td><td>
+                  <textarea id="mesage" rows="4" cols="25"> Текст по умолчанию </textarea><br></td></tr>
+                <tr align="left"><td></td><td>
+                  <input id="check" type="checkbox">Zapoznalem/em sie z regulaminem</td></tr>
+                <tr align="left"><td></td><td>
+                  <input id="reset" type="submit" value="Resetuj" onclick="clickReset()">
+                <input id="Przesli" type="submit" value="Przesli" onclick="verification()"></td>
+              </tr>
                </table>
-          </form> 
+          </form>
           <hr width="70%">
+          <p id="js"></p>
     </div>
     <div class="stopka">
       <p>Autor strony: <b>12345678912</b></p>
     </div>
     </div>
     <script>
-      document.getElementById("Przesli").onclick=function(){
-        console.log("run");
-      }
+      function verification() {
+        var name = document.getElementById("firstnam").value;
+        var name1 = name.toUpperCase();
+        var lname = document.getElementById("lastname").value;
+        var lname1 = lname.toUpperCase();
+        var email = document.getElementById("email").value;
+        var mesage = document.getElementById("mesage").value;
+        var check = document.querySelector('input[type=checkbox]');
+        if (check.checked) {
+          document.getElementById('js').innerHTML = name1+" "+lname1+"<br>Treść Twojej sprawy: "+mesage+"<br>Na podany e-mail zostanie wysłana oferta.";
+        } else {
+          document.getElementById('js').innerHTML = "Musisz zapoznać się z regulaminem";
+        }
+          }
     </script>
   </body>
 </html>
